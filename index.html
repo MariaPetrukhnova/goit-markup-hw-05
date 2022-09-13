@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>goit-markup-hw-04</title>
+        <title>goit-markup-hw-05</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
         <link rel="stylesheet" href="./css/main.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,7 +45,7 @@
             <section class="hero section">
                 <div class="container">
                     <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                    <button type="button" class="hero-btn">Замовити послугу</button>
+                    <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
                 </div>
             </section>
             <section class="features section">
@@ -367,5 +367,11 @@
                 </div>
             </div>    
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="modal-close" data-modal-close></button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
